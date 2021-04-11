@@ -1,17 +1,58 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title></title>
+        <style>
+            h1 {
+                text-align: center;
+                font-size: 70pt;
+                color: white;
+                background-color: #31B404;
+            }
+            footer {
+                text-align: center;
+                background-color: #31B404;
+            }
+            #eingabe {
+                text-align: center;
+                font-size: 25pt;
+                color: skyblue;
+            }
+            .eingabe {
+                width: 35.5%;
+                margin: auto;
+                margin-top: 20pt;
+            }
+        </style> 
+        <meta charset="utf-8">
+        <title> Wie sortiere ich meinen Müll </title>
     </head>
-    <body>
+    <body style="background-image:">
+        
+<!--        <header id="masthead" class="site-header" role="banner" >
+            <ul>
+                
+            </ul>
+        </header>-->
+        
         <?php
-        // put your code here
-        ?>
+//            include_once 'config_dp.php';
+//            $db = get_link();
+            
+            $dummy = '';
+            $dummy = '<h1> 
+                     Wie sortiere ich meinen Müll 
+                     </h1>';
+            $dummy = $dummy . '<div id = "eingabe"> 
+                              Geben sie hier eine Beschreibung ihres Mülles ein: 
+                              </div>';
+             
+            echo $dummy;
+            
+            include 'abfrage.php';
+            include 'fußzeile.php';
+            
+         ?>
+        
     </body>
 </html>
